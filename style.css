@@ -1,0 +1,684 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Global
+--------------------------------------------- */
+
+
+body {
+  background:#e0e0e2;
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word !important;
+  font-family: 'roboto', sans-serif;
+  color: #333333;
+  overflow-x: hidden;
+}
+
+a,
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Heebo',sans-serif;
+  color: #222222;
+}
+
+.section {
+  width: 100%;
+  padding: 8vw 0 0 0;
+  box-shadow: 0 2em 3em -1em rgba(15, 5, 68, 0.2);
+}
+
+.dots-bg {
+  background: url(assets/bg.png) no-repeat center;
+  background-size: cover;
+}
+.button {
+  color: #222222;
+  font-weight: 600;
+  border: 4px solid #222;
+  padding: 15px;
+  border-radius: 100px;
+  font-size: 18px;
+  transition: all 0.4s ease-in-out;
+}
+.button:hover {
+  color: #e0e0e2;
+  background-color: #222222;
+}
+
+
+/* Navigation
+--------------------------------------------- */
+
+nav {
+  margin: 0;
+  padding: 1.5vw 0 0 0;
+  background-color: #e0e0e2;
+}
+
+#logo {
+  float: left;
+  width: 350px;
+  margin: 0 0 1vw 2vw;  
+}
+
+
+nav .toggle-1 {
+  position: relative;
+  padding: 27px 20px 0 0;
+  float: right;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+nav .toggle-1 .nav-icon {
+  display: block;
+  position: relative;
+  background: #222222;
+  height: 3px;
+  width: 22px;
+  border-radius: 3px;
+  transition: all .5s ease-in-out;
+}
+
+nav .toggle-1 .nav-icon::before,
+nav .toggle-1 .nav-icon::after {
+  content: "";
+  position: absolute;
+  background: #222222;
+  height: 3px;
+  width: 22px;
+  border-radius: 3px;
+  transition: all .5s ease-in-out;
+}
+
+nav .toggle-1 .nav-icon::before {
+    transform: translateY(-7px);
+}
+
+nav .toggle-1 .nav-icon::after {
+    transform: translateY(7px);
+}
+
+nav .toggle-1.open .nav-icon {
+    transform: translateX(-22px);
+    background: transparent;
+}
+
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul {
+  float: right;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  transition: all 0.3s ease-out;
+  margin: 0 3vw 0 0;
+}
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+}
+
+nav a {
+  display: block;
+  padding: 0 20px;
+  color: #7b7b7b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 60px;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+nav ul li ul li a {
+    color: #a8a8a8;
+    transition: color 0.4s ease;
+    line-height: 50px !important;
+}
+
+nav ul li ul li a:hover {
+  color: white;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav ul ul {
+  position: absolute;
+  top: 90px;
+  background: #222222;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .4s ease, top .4s ease;
+}
+
+nav ul li:hover>ul {
+  top: 50px;
+  opacity: 1;
+  visibility: visible;
+  transition: 0.4s ease;
+}
+
+nav ul ul li {
+  width: 120px;
+  float: none;
+  display: list-item;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+
+li>a:after {
+  content: ' +';
+}
+
+li>a:only-child:after {
+  content: '';
+}
+
+
+/* Homepage
+--------------------------------------------- */
+
+.home-header {
+  width: 100%;
+  height: 46vw;
+  padding: 2vw 0 0 0 !important;
+}
+.home-header .header-txt {
+  width: 50%;
+  margin-left: 6vw;
+}
+.home-header .header-txt h1 {
+  font-size: 4.3vw;
+  margin: 1vw 0 0 0;
+  line-height: 1.1;
+}
+.home-header .header-txt p {
+  font-size: 1.3vw;
+  line-height: 1.5;
+}
+.home-header img {
+  position: relative;
+  right: -27vw;
+  top: -15vw;
+  z-index: -1;
+  width: 77%;
+}
+
+/* ==================================== */
+
+.brands {
+  width: 100%;
+  padding: 100px 0 100px 0;
+}
+.brands h2 {
+  margin: 0;
+  font-size: 5vw;
+  font-weight: 800;
+  margin-left: 5vw;
+  letter-spacing: -2px;
+}
+.brands .brand-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vw 0;
+}
+.brands .brand-links a {
+  width: 14vw;
+  height: 14vw;
+  margin: 0 -1vw;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: -5px 2px 0 1px rgba(0, 0, 0, .2);
+  transition: all .4s ease-in-out;
+}
+.brands .brand-links a h5 {
+  font-size: 1vw;
+  color: #222222;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  transform: translateY(50px);
+  transition: all .4s ease-in-out;
+}
+.brands .brand-links a:hover {
+  transform: scale(1.25, 1.25) translateY(-3vw);
+  box-shadow: -10px 15px 15px 1px rgba(0, 0, 0, .2);
+}
+.brands .brand-links a:hover h5 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+#koti {
+  background-color: #00A1B7;
+  z-index: 0;
+}
+#koti img {
+  width: 45%;
+  margin: 36% auto;
+}
+#koti h5 {
+  top: -0.5vw;
+}
+#entity {
+  background-color: #00CEA6;
+  z-index: 1;
+}
+#entity img {
+  width: 70%;
+  margin: 29% 0;
+}
+#entity h5 {
+  top: 1.3vw;
+}
+#prizm {
+  background-color: black;
+  z-index: 2;
+}
+#prizm img {
+  width: 55%;
+  margin: 25% 0;
+}
+#prizm h5 {
+  top: 1vw;
+}
+#audial {
+  background-color: #F2F2F2;
+  z-index: 3;
+}
+#audial img {
+  width: 65%;
+  margin: 33% 0;
+}
+#audial h5 {
+  top: 0.2vw;
+}
+#b-aktiv {
+  background-color: #00B294;
+  z-index: 4;
+}
+#b-aktiv img {
+  width: 70%;
+  margin: 45% 0;
+}
+#b-aktiv h5 {
+  top: -1.1vw;
+}
+.brands .txt {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.5;
+}
+.brands .txt h3 {
+  font-size: 2.3vw;
+  margin-bottom: 0;
+}
+.brands .txt p {
+  font-size: 1.2vw;
+}
+
+/* ==================================== */
+
+.sourcing {
+  width: 100%;
+  padding: 8vw 0 0 0;
+  /* background: url(assets/divider-1.png) right bottom no-repeat, url(assets/divider-2.png) left top no-repeat;
+  background-size: contain, contain; */
+  margin-bottom: -10vw;
+}
+.sourcing .sourcing-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 90%;
+  margin: 0 auto 2vw auto;
+}
+.sourcing .sourcing-header .image {
+  width: 50%;
+}
+.sourcing .sourcing-header .text-n-button {
+  width: 45%;
+}
+.sourcing .sourcing-header .text-n-button h2 {
+  font-size: 3.5vw;
+  line-height: 1.2;
+}
+.sourcing #shape .triangle-down {
+  width: 0px;
+  border-left: 10vw solid transparent;
+  border-right: 10vw solid transparent;
+  border-top: 10vw solid #e0e0e2;
+  margin: 0 auto;
+  z-index: 10;
+  position: relative;
+}
+.sourcing .sourcing-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 5vw;
+  background: #D9D8D8;
+  padding: 6vw 0 4vw 0;
+  position: relative;
+  top: -10vw;
+  box-shadow: 0 2em 3em -1em rgba(99, 90, 145, 0.35);
+}
+.sourcing .sourcing-icons .icon-box {
+  width: 18vw;
+  margin: 0 2vw 0 2vw;
+  text-align: center;
+  font-size: 1vw;
+  line-height: 1.5;
+  color: #686868;
+  font-weight: 300;
+}
+.sourcing .sourcing-icons .icon-box img {
+  width: 6vw;
+}
+.sourcing .sourcing-icons .icon-box p {
+  text-align: left !important;
+}
+
+/* ==================================== */
+
+.packaging {
+  padding: 10vw 0 5vw 0;
+  position: relative;
+  z-index: 5; 
+  }
+.packaging .packaging-panel {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  width: 90%;
+  margin: 0 auto 2vw auto;
+}
+.packaging .packaging-panel .text-n-button {
+  width: 40%;
+  position: relative;
+  top: -5vw;
+}
+.packaging .packaging-panel .text-n-button h2 {
+  font-size: 3.5vw;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+.packaging .packaging-panel .text-n-button p {
+  font-size: 1.5vw;
+  margin: 1vw 0 3vw 0;
+  line-height: 1.5;
+}
+.packaging .packaging-panel .image {
+  width: 40%;
+  position: relative;
+  top: 2vw;
+}
+.packaging .packaging-panel .image img {
+  width: 100%;
+}
+
+/* ==================================== */
+
+.quality {
+  background: url(assets/woman-headphones.jpg) no-repeat;
+  background-size: 65% auto;
+  position: relative;
+  padding-top: 12vw !important;
+  height: 30vw;
+}
+.quality .text-n-button {
+  width: 45vw;
+  float: right;
+  right: 7vw;
+  position: relative;
+  top: -6vw;
+}
+.quality .text-n-button h2 {
+  font-size: 3vw;
+  line-height: 1;
+  margin-bottom: 0;
+}
+.quality .text-n-button p {
+  font-size: 1.3vw;
+  line-height: 1.4;
+  margin: 1vw 0 3vw 0;
+}
+
+/* Entity
+--------------------------------------------- */
+
+.entity-header {
+  background: #00CBB7;
+  display: flex;
+  align-items: center;
+  padding-top: 2vw !important;
+}
+.entity-header .image {
+  float: left;
+  width: 35%;
+  margin-right: -3vw;
+}
+.entity-header .text {
+  width: 50%;
+  position: relative;
+  right: -9vw;
+  top: -5vw;
+}
+.entity-header .text p {
+  color: white;
+  font-size: 2vw;
+  font-weight: 300;
+}
+
+/* ==================================== */
+
+.entity-rove-panel-1 {
+  width: 100%;
+  background: url(assets/entity-rove-14-inch-1.jpg) no-repeat;
+  background-size: cover;
+  background-position: 15vw 2vw;
+  height: 51vw;
+  box-shadow: 0 2em 3em -1em rgba(15, 5, 68, 0.2);
+  margin: 7vw 0;
+  padding-bottom: 3vw;
+}
+.entity-rove-panel-1 .txt {
+  width: 45%;
+  margin-left: 7vw; 
+}
+.entity-rove-panel-1 .txt h2 {
+  font-size: 4.3vw;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+.entity-rove-panel-1 .txt p {
+  font-size: 1vw;
+  line-height: 1.5;
+}
+.entity-rove-panel-1 .txt .product-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+margin-top: 2vw;  
+  width: 100%;
+}
+.entity-rove-panel-1 .txt .product-icons .icon-box {
+  text-align: center;
+  width: 11vw;
+}
+.entity-rove-panel-1 .txt .product-icons .icon-box img {
+  width: 60px;
+}
+.entity-rove-panel-1 .txt .product-icons .icon-box h5 {
+  margin: 0.5vw 0;
+  font-size: 1vw;
+  font-weight: 900;
+}
+.entity-rove-panel-1 .txt .product-icons .icon-box p {
+  margin: 0.25vw 0;
+}
+#storage {
+  height: 60px;
+}
+
+/* Media Queries
+--------------------------------------------- */
+@media all and (max-width : 1550px) {
+  
+  .sourcing .sourcing-icons {
+    justify-content: center;
+    padding: 6vw 0 2vw 0;
+  }
+  .sourcing .sourcing-icons .icon-box {
+    width: 20vw;
+    margin: 0 8vw 3vw 8vw;
+    font-size: 1.2vw;
+  }
+  .sourcing .sourcing-icons .icon-box img {
+    width: 8vw;
+  }
+  .sourcing .sourcing-icons .icon-box p {
+    text-align: justify !important;
+  }
+
+}
+@media all and (max-width : 1300px) {
+
+  nav {
+    margin: 0;
+  }
+  nav a {
+      color: #bdbdbd;
+      font-size: 25px;
+      padding-left: 3.5vw;
+  }
+  nav a:hover {
+      color: white;
+  }
+  nav ul{
+    float:none;
+    max-height: 0;
+    clear: both;
+    overflow: hidden;
+    margin: 0;
+  }
+  nav .menu .toggle-2 {
+    display: block;
+    padding: 0 0 0 3.5vw;
+    color: #bdbdbd;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 60px;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    cursor: pointer;
+  }
+  .toggle-2+a {
+    display: none;
+  }
+
+  nav .menu .toggle-2:hover {
+      color: white;
+  }
+
+  [id^=drop]:checked+ul {
+    display: block;
+    max-height: 700px;
+  }
+
+  nav ul li {
+    display: block;
+    width: 100%;
+    background: #222222;
+    border-bottom: solid 1px black;
+  }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+
+  nav ul ul a {
+    background-color: #2d2d2d;
+    font-size: 18px;
+  }
+
+  nav ul li ul li a {
+      color: #939393;
+  }
+
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #bdbdbd;
+    opacity: 1;
+    visibility: visible;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  nav ul ul li:hover>ul,
+  nav ul li:hover>ul {
+    display: none;
+  }
+
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+  input {
+      display: none;
+  }
+  .brands .brand-links {
+    margin: 5vw 0;
+  }
+  .brands .brand-links a h5 {
+    font-size: 1.2vw;
+  }
+  .brands .txt {
+    width: 65%;
+    font-size: 1.5vw;
+  }
+  .brands .txt h3 {
+    font-size: 2.6vw;
+    margin-bottom: 0;
+  }
+  .brands .txt p {
+    font-size: 1.6vw;
+  }
+
+}
+
+@media (min-width: 1300px) {
+  
+    .toggle-1,
+    .toggle-2,
+    #drop,
+    #drop-1 {
+        display: none;
+    }
+}
