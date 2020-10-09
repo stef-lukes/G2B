@@ -632,7 +632,7 @@ li>a:only-child:after {
   margin: 1vw 0 3vw 0;
 }
 
-/* Entity
+/* ENTITY ENTITY ENTITY ENTITY ENTITY  
 --------------------------------------------- */
 
 .entity-header {
@@ -656,75 +656,226 @@ li>a:only-child:after {
   color: white;
   font-size: 2vw;
   font-weight: 300;
+  margin-top: 2vw;
 }
 
 /* ==================================== */
 
-.entity-rove-panel-1 {
+.windows-panel-1 {
   width: 100%;
-  background: url(assets/entity-rove-14-inch-1.jpg) no-repeat;
-  background-size: 85% auto;
-  background-position: 25vw 4vw;
-  height: 45vw;
+  /* background: url(assets/entity-rove-14-inch-1.jpg) no-repeat;
+  background-size: 90% auto;
+  background-position: 20vw 2vw; */
+  height: 39vw;
   box-shadow: 0 2em 3em -1em rgba(15, 5, 68, 0.2);
   margin: 5vw 0;
-  padding-bottom: 3vw;
-  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-top: 8vw;
 }
-.entity-rove-panel-1 h2 {
-  font-size: 4vw;
-  margin-left: 8.5vw;
+.windows-panel-1 .panel-1-container {
+  width: 25%;
+  float: right;
+  position: relative;
+  top: -7vw;
+  right: 17vw;
+ }
+ 
+.windows-panel-1 .panel-1-container h2 {
+  font-size: 2.5vw;
   margin-bottom: 2vw;
+  font-weight: 900;
+  text-align: center;
 }
-.entity-rove-panel-1 .blurbs-box {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 50%;
-  margin-left: 2vw;
+
+.windows-panel-1 .panel-1-container .blurbs-box {
+  justify-content: space-between;
+  flex-direction: column;
   }
-.entity-rove-panel-1 .blurbs-box .horizontal-blurb {
+.windows-panel-1 .panel-1-container .blurbs-box .blurb {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 4vw;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 5vw;
+  width: 100%;
 }
-.entity-rove-panel-1 .blurbs-box .horizontal-blurb .txt p {
-  font-size: 1.1vw;
+#windows {
+  /* border: #0278d5 solid 5px; */
+  border-radius: 30px;
+  height: 13vw;
+  margin: 0 0 2.5vw 0;
+}
+#windows p {
+  /* color: #0278d5; */
+}
+#office {
+  /* border: #db4017 solid 5px; */
+  border-radius: 30px;
+  height: 13vw;
+}
+#office p {
+  /* color: #db4017; */
+}
+.windows-panel-1 .panel-1-container .blurbs-box .blurb .txt p {
+  font-size: 1.3vw;
   text-align: justify;
+  font-weight: 400;
+  line-height: 1.5;
 }
-.entity-rove-panel-1 .blurbs-box .horizontal-blurb .logo {
-  width: 11vw;
+.windows-panel-1 .panel-1-container .blurbs-box .blurb .logo {
+  width: 60%;
   margin-bottom: 1vw;
 }
-.entity-panel-2 {
-  background: url(assets/entity-front-100.jpg) no-repeat;
-  background-size: 85% auto;
-  background-position: -12vw -4vw;
+#windows-panel-1-image {
+  position: relative;
+  top: -43vw;
+  left: -13vw;
+  width: 85%;
+}
+
+/* ==================================== */
+
+.windows-panel-2 {
+  background: url(assets/entity-laptop-front.png) no-repeat;
+  background-size: 70% auto;
+  background-position: 31vw -1vw;
   height: 45vw;
+  box-shadow: 0 2em 3em -1em rgba(15, 5, 68, 0.2);
+  margin: 5vw 0;
+  padding-bottom: 2vw;
+  padding-top: 2vw;
+}
+.windows-panel-2 .panel-2-container {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 5vw;
+  width: 43%;
+  padding: 2vw 0 2vw 3vw;
+    /* background: #ececec; */
+ }
+ 
+.windows-panel-2 .blurbs-box {
+  float: right;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.windows-panel-2 h2 {
+  font-size: 2.9vw;
+  font-weight: 900;
+}
+.windows-panel-2 h3 {
+  font-size: 1.6vw;
+}
+.windows-panel-2 .blurbs-box .blurb {
+  width: 11vw;
+  margin: 1vw 1vw;
+}
+.windows-panel-2 .blurbs-box .blurb .txt ul {
+  list-style: none;
+  font-size: 1.3vw;
+  font-weight: 500;
+  margin-top: 1vw;
+  padding-left: 0.5vw;
+}
+.windows-panel-2 .blurbs-box .blurb .txt ul li {
+  margin: 0.3vw 0;
+}
+
+/* ==================================== */
+
+.android-panel-1 {
+  background: url(assets/tablet-left.png) no-repeat;
+  background-size: 60% auto;
+  background-position: -19vw -9vw;
+  height: 43vw;
   box-shadow: 0 2em 3em -1em rgba(15, 5, 68, 0.2);
   margin: 5vw 0;
   padding-bottom: 3vw;
   padding-top: 1vw;
+
 }
-.entity-panel-2 .blurbs-box {
+.android-panel-1 .panel-1-container {
+  width: 45%;
   float: right;
-  margin: 0 5vw 0 0;
+  position: relative;
+  width: 45%;
+  right: 11vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 3vw;
 }
-.entity-panel-2 h2 {
-  font-size: 3vw;
-  margin-left: 57.5vw;
+.android-panel-1 .panel-1-container .blurb-box .blurb-1 p {
+  font-size: 1.4vw;
+  margin-top: 2vw;
 }
-.entity-panel-2 .blurbs-box .horizontal-blurb .txt ul {
-  list-style: none;
+.android-panel-1 .panel-1-container .blurb-box .blurb-1 img {
+  width: 80%;
 }
-#amd {
-  width: 16vw;
+.android-panel-1 .panel-1-container .blurb-box .blurb-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 2vw;
+  margin-right: 2vw;
 }
+.android-panel-1 .panel-1-container .blurb-box .blurb-2 h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 3.5vw;
+  line-height: 1.2;
+}
+.android-panel-1 .panel-1-container .blurb-box .blurb-2 img {
+  width: 25%;
+  margin-left: 4vw;
+}
+/* ==================================== */
 
-
+.android-panel-2 {
+  background: url(assets/tablet-right.png) no-repeat;
+  background-size: 70% auto;
+  background-position: 37vw 1vw;
+  height: 42vw;
+  margin: 5vw 0;
+  padding-bottom: 5vw;
+  padding-top: 2vw;
+}
+.android-panel-2 .panel-2-container .blurb-box {
+  width: 30%;
+  position: relative;
+  left: 10vw;
+  top: 2vw;
+}
+.android-panel-2 .panel-2-container .blurb-box .blurb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.android-panel-2 .panel-2-container .blurb-box .blurb h2 {
+  font-size: 2.5vw;
+  text-align: center;
+}
+.android-panel-2 .panel-2-container .blurb-box .blurb h3 {
+  text-align: center;
+  font-size: 1.6vw;
+}
+.android-panel-2 .panel-2-container .blurb-box .blurb img {
+  margin: 2vw 0 0 0;
+  width: 55%;
+  text-align: center;
+}
+.android-panel-2 .panel-2-container .blurb-box .blurb p {
+  font-size: 1.5vw;
+  text-align: center;
+  font-weight: 500;
+  margin: 0.3vw 0;
+}
+#mediatek {
+  margin-bottom: 1vw;
+}
 
 /* Media Queries
 --------------------------------------------- */
