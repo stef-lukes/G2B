@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>G2Brands | Home</title>
+
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 600 ||
+                document.documentElement.scrollTop > 600
+            ) {
+                document.getElementById("smallnavbar").style.visibility = "visible";
+                document.getElementById("smalllogo").style.visibility = "visible";
+                document.getElementById("smallnavbar").style.opacity = "1";
+                document.getElementById("smalllogo").style.opacity = "1";
+            } else {
+                document.getElementById("smallnavbar").style.visibility = "hidden";
+                document.getElementById("smalllogo").style.visibility = "hidden";
+                document.getElementById("smallnavbar").style.opacity = "0";
+                document.getElementById("smalllogo").style.opacity = "0";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar 
+------------------------------------------- -->
+
+
+    <nav>
+        <div id="logo"><img src="assets/g2b-logo-1.svg" alt=""></div>
+        <input type="checkbox" id="drop" />
+        <label for="drop" class="toggle-1" id='main-toggle'><span class="nav-icon"></span></label>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-1" class="toggle-2">Brands +</label>
+                <a href="#">Brands</a>
+                <input type="checkbox" id="drop-1">
+                <ul>
+                    <li><a href="entity.html">Entity</a></li>
+                    <li><a href="audial.html">Audial</a></li>
+                    <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                    <li><a href="prizm.html">Prizm</a></li>
+                    <li class="sub-koti"><a href="koti.html">Koti</a></li>
+                </ul>
+            </li>
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="branding-design.html">Branding & Design</a></li>
+            <li><a href="quality-assurance.html">Quality Assurance</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="smallnavbar" class="smallnavbar">
+        <div id="smalllogo" class="smalllogo"><img src="assets/g2b-logo-1-small-grey.svg" alt=""></div>
+        <label for="drop-2" class="toggle-3" id='main-toggle-small'><span class="nav-icon"></span></label>
+        <input type="checkbox" id="drop-2">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-3" class="toggle-4">Brands +</label>
+                <a href="#">Brands</a>
+                <input type="checkbox" id="drop-3">
+                <ul>
+                    <li><a href="entity.html">Entity</a></li>
+                    <li><a href="audial.html">Audial</a></li>
+                    <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                    <li><a href="prizm.html">Prizm</a></li>
+                    <li class="sub-koti"><a href="koti.html">Koti</a></li>
+                </ul>
+            </li>
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="branding-design.html">Branding & Design</a></li>
+            <li><a href="quality-assurance.html">Quality Assurance</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- HEADER 
+------------------------------------------- -->
+    <div class="audial-header">
+        <div class="text-box">
+            <img src="assets/audio-logo-white.svg" alt="">
+            <p>Our Audial brand supllies a host of powerful and stylish audio devices, ranging from Active Noise
+                Cancelling headphones and earbuds to speakers, soundbars and home cinema products.</p>
+        </div>
+    </div>
+
+
+    <!-- AUDIAL ANC PANEL 1 
+------------------------------------------- -->
+
+    <div class="audial-anc-panel section">
+        <div class="blurb-box">
+            <h2>Audial ANC Wireless Over-Ear Headphones</h2>
+            <p>Balanced mid-range tones, crystal-clear highs, and rich, deep bass make for intense Hi-Res sound
+                reproduction from our B077 ANC Wireless Over-Ear Headphones, whilst Active Noise Cancellation
+                effectively reduces up to 90% of all external noise, and super long battery life provides up to 22 hours
+                of play-time!
+            </p>
+            <div class="icon-box">
+                <div class="icon">
+                    <img src="assets/icon-anc.svg" alt="">
+                    <h5>ANC</h5>
+                    <p>Anti Noise Cancellation</p>
+                </div>
+                <div class="icon">
+                    <img src="assets/icon-bluetooth.svg" alt="">
+                    <h5>Bluetooth</h5>
+                    <p>5.0</p>
+                </div>
+                <div class="icon">
+                    <img src="assets/icon-playtime.svg" alt="">
+                    <h5>Play-time</h5>
+                    <p>22 hours</p>
+                </div>
+                <div class="icon">
+                    <img src="assets/icon-type-c.svg" alt="">
+                    <h5>Type-C</h5>
+                    <p>Rapid Charging</p>
+                </div>
+            </div>
+        </div>
+        <div class="images">
+            <div id="anc-cf-image">
+                <img class="bottom" src="assets/audial-anc-1-bottom.jpg" />
+                <img class="top" src="assets/audial-anc-1-top.jpg" />
+            </div>
+        </div>
+    </div>
+
+
+    <!-- AUDIAL TRUE WIRELESS EARBUDS PANEL  
+------------------------------------------- -->
+
+    <div class="audial-earbuds-panel section">
+        <!-- <div class="detail"><img id="earbuds" src="assets/audial-earbuds-1.png" alt=""></div> -->
+        <div class="blurb-box">
+
+            <h2>Audial True Wireless Earbuds Pro</h2>
+            <p>Enjoy crisp sound with up to 8-10 hours playtime with our Audial True Wireless Earbuds Pro. Once paired,
+                you can travel within 10m of your device with a seamless Bluetooth 5.0 connection. Once your audial
+                Earbuds Pro are out of charge, simply place them in the 500mAh charging case for 2 hours to restore full
+                battery!
+            </p>
+            <div class="icon-box">
+                <div class="icon">
+                    <img src="assets/icon-bluetooth.svg" alt="">
+                    <h5>Bluetooth</h5>
+                    <p>5.0</p>
+                </div>
+                <div class="icon">
+                    <img src="assets/icon-playtime.svg" alt="">
+                    <h5>Play-time</h5>
+                    <p>8-10 Hours</p>
+                </div>
+                <div class="icon">
+                    <img src="assets/icon-wireless-charge.svg" alt="">
+                    <h5>Charging</h5>
+                    <p>Wireless Charging</p>
+                </div>
+                <div class="icon">
+                    <img src="assets/icon-case.svg" alt="">
+                    <h5>Case</h5>
+                    <p>Charging Case</p>
+                </div>
+            </div>
+        </div>
+        <div id="earbuds-cf-image">
+            <img class="bottom" src="assets/audial-earbuds-bottom.jpg" />
+            <img class="top" src="assets/audial-earbuds-top.jpg" />
+        </div>
+
+    </div>
+
+    <!-- Footer 
+------------------------------------------- -->
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="assets/g2b-logo-grey.svg" alt="">
+            <p>Giani UK Ltd, Central House, 2-4 Wellington Grove,
+                Stockport, Cheshire, SK2 6RH, United Kingdom</p>
+        </div>
+        <div class="contact-social" style="display: flex;flex-direction: column;">
+            <h5>Contact Us</h5>
+            <a href="tel:01614806204"><i class="fas fa-phone-alt"></i> +44 1614806204</a>
+            <a href="mailto:info@"><i class="fas fa-envelope-open-text"></i> info@g2brands.co.uk</a>
+            <div class="social-icons" style="display: flex;justify-content: space-between;">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <h5>Brands:</h5>
+            <ul>
+                <li><a href="entity.html">Entity</a></li>
+                <li><a href="prizm.html">Prizm</a></li>
+                <li><a href="audial.html">Audial</a></li>
+                <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                <li><a href="koti.html">Koti</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h5>Sitemap:</h5>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sourcing.html">Sourcing</a></li>
+                <li><a href="branding-design.html">Branding & Design</a></li>
+                <li><a href="quality-assurance.html">Quality Assurance</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
