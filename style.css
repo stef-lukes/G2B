@@ -1124,7 +1124,165 @@ li>a:only-child:after {
   display: block;
 } 
 
-/* Media Queries
+
+/* AUDIAL AUDIAL AUDIAL AUDIAL AUDIAL
+--------------------------------------------- */
+
+.audial-header {
+  width: 100%;
+  background: url(assets/audial-bg-header.png) no-repeat, url(assets/audial-banner.jpg) no-repeat;
+  background-size: auto 100%, cover;
+  background-position: right, 0vw -2vw;
+  height: 37vw;
+}
+.audial-header .text-box {
+  width: 36%;
+  position: absolute;
+  right: 9vw;
+  top: 16vw;
+}
+.audial-header .text-box img {
+  width: 75%;
+}
+.audial-header .text-box p {
+  font-size: 1.4vw;
+  margin-top: 1vw;
+  color: #7b7b7b;
+  padding-left: 2vw;
+}
+
+
+/* =================================================== */
+
+.audial-anc-panel {
+  width: 100%;
+  background: url(assets/audial-bg-l.png) no-repeat;
+  background-size: auto 100%;
+  background-position: left;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 50;
+}
+.audial-anc-panel .blurb-box {
+  width: 40%;
+  position: relative;
+  left: 4vw;
+}
+.audial-anc-panel .blurb-box h2 {
+  font-size: 4vw;
+  line-height: 1;
+}
+.audial-anc-panel .blurb-box p {
+  font-size: 1.2vw;
+  line-height: 1.4;
+  margin: 2vw 0;
+}
+.audial-anc-panel .blurb-box .icon-box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.audial-anc-panel .blurb-box .icon-box .icon {
+  width: 20%;
+}
+.audial-anc-panel .blurb-box .icon-box .icon img {
+  width: 75%;
+}
+.audial-anc-panel .blurb-box .icon-box .icon h5 {
+  font-size: 1.2vw;
+  margin: 1vw 0 0.5vw 0;
+}
+.audial-anc-panel .blurb-box .icon-box .icon p {
+  font-size: 1vw;
+  font-weight: 500;
+  margin: 0;
+}
+.audial-anc-panel .images {
+  width: 45%;
+  top: -6vw;
+  position: relative;
+}
+.audial-anc-panel .images #anc-cf-image {
+  width: 60%;
+  display: block;
+  margin: auto;
+  height: 42vw;
+}
+.audial-anc-panel .images #anc-cf-image img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+.audial-anc-panel .images #anc-cf-image img.top:hover {
+  opacity: 0;
+}
+
+/* =================================================== */
+
+.audial-earbuds-panel {
+  width: 100%;
+  background: url(assets/audial-bg-r.png) no-repeat;
+  background-size: auto 100%;
+  background-position: right;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  height: 40vw;
+}
+.audial-earbuds-panel .blurb-box {
+  width: 40%;
+  position: relative;
+  right: 3vw;
+}
+.audial-earbuds-panel .blurb-box h2 {
+  font-size: 4vw;
+  line-height: 1;
+}
+.audial-earbuds-panel .blurb-box p {
+  font-size: 1.2vw;
+  line-height: 1.4;
+  margin: 2vw 0;
+}
+.audial-earbuds-panel .blurb-box .icon-box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.audial-earbuds-panel .blurb-box .icon-box .icon {
+  width: 20%;
+}
+.audial-earbuds-panel .blurb-box .icon-box .icon img {
+  width: 60%;
+}
+.audial-earbuds-panel .blurb-box .icon-box .icon h5 {
+  font-size: 1.2vw;
+  margin: 1vw 0 0.5vw 0;
+}
+.audial-earbuds-panel .blurb-box .icon-box .icon p {
+  font-size: 1vw;
+  font-weight: 500;
+  margin: 0;
+}
+.audial-earbuds-panel #earbuds-cf-image {
+  width: 45%;
+  display: block;
+  position: relative;
+  top: -6vw;
+  right: 4vw;
+}
+.audial-earbuds-panel #earbuds-cf-image img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+.audial-earbuds-panel #earbuds-cf-image img.top:hover {
+  opacity: 0;
+}
+
+/* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES
 --------------------------------------------- */
 @media all and (max-width : 1550px) {
   
