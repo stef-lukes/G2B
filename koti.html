@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>G2Brands | Home</title>
+
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 600 ||
+                document.documentElement.scrollTop > 600
+            ) {
+                document.getElementById("smallnavbar").style.visibility = "visible";
+                document.getElementById("smalllogo").style.visibility = "visible";
+                document.getElementById("smallnavbar").style.opacity = "1";
+                document.getElementById("smalllogo").style.opacity = "1";
+            } else {
+                document.getElementById("smallnavbar").style.visibility = "hidden";
+                document.getElementById("smalllogo").style.visibility = "hidden";
+                document.getElementById("smallnavbar").style.opacity = "0";
+                document.getElementById("smalllogo").style.opacity = "0";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar 
+------------------------------------------- -->
+
+
+    <nav>
+        <div id="logo"><img src="assets/g2b-logo-1.svg" alt=""></div>
+        <input type="checkbox" id="drop" />
+        <label for="drop" class="toggle-1" id='main-toggle'><span class="nav-icon"></span></label>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-1" class="toggle-2">Brands +</label>
+                <a href="#">Brands</a>
+                <input type="checkbox" id="drop-1">
+                <ul>
+                    <li><a href="entity.html">Entity</a></li>
+                    <li><a href="audial.html">Audial</a></li>
+                    <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                    <li><a href="prizm.html">Prizm</a></li>
+                    <li class="sub-koti"><a href="koti.html">Koti</a></li>
+                </ul>
+            </li>
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="branding-design.html">Branding & Design</a></li>
+            <li><a href="quality-assurance.html">Quality Assurance</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="smallnavbar" class="smallnavbar">
+        <div id="smalllogo" class="smalllogo"><img src="assets/g2b-logo-1-small-grey.svg" alt=""></div>
+        <label for="drop-2" class="toggle-3" id='main-toggle-small'><span class="nav-icon"></span></label>
+        <input type="checkbox" id="drop-2">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-3" class="toggle-4">Brands +</label>
+                <a href="#">Brands</a>
+                <input type="checkbox" id="drop-3">
+                <ul>
+                    <li><a href="entity.html">Entity</a></li>
+                    <li><a href="audial.html">Audial</a></li>
+                    <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                    <li><a href="prizm.html">Prizm</a></li>
+                    <li class="sub-koti"><a href="koti.html">Koti</a></li>
+                </ul>
+            </li>
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="branding-design.html">Branding & Design</a></li>
+            <li><a href="quality-assurance.html">Quality Assurance</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- KOTI HEADER 
+------------------------------------------- -->
+
+    <div class="koti-header">
+        <div class="text"><img src="assets/koti-shadow.svg" alt="">
+            <p>Smart Home Technology</p>
+        </div>
+    </div>
+
+
+    <!-- KOTI SEC CAM 
+------------------------------------------- -->
+
+    <div class="koti-security-panel section">
+        <div class="blurb-box">
+            <h2>Koti Full HD 1080p Smart Security System</h2>
+            <p>Protect all that you love with, our Smart Home Security System. Available with two or four cameras, 1TB
+                hard-drive, night vison, and remote monitoring. All cables and power splitters and mouse included.
+            </p>
+            <div class="icon-box">
+                <div class="icon">
+                    <img src="assets/icon-night.svg" alt="">
+                    <h5>Infrared</h5>
+                    <p>Night Vision Up To 65ft</p>
+                </div>
+                <div class="icon">
+                    <img src="assets/icon-hdd.svg" alt="">
+                    <h5>Storage</h5>
+                    <p>1TB HDD</p>
+                </div>
+                <div class="icon">
+                    <img src="assets/icon-record.svg" alt="">
+                    <h5>Record Modes</h5>
+                    <p>Remote / Motion / Schedule</p>
+                </div>
+                <div class="icon">
+                    <img src="assets/icon-phone.svg" alt="">
+                    <h5>Monitor</h5>
+                    <p>Rmote Monitor via device</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="koti-cf-image">
+            <img src="assets/koti-security.png" />
+        </div>
+
+    </div>
+    </div>
+
+    <!-- Footer 
+------------------------------------------- -->
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="assets/g2b-logo-grey.svg" alt="">
+            <p>Giani UK Ltd, Central House, 2-4 Wellington Grove,
+                Stockport, Cheshire, SK2 6RH, United Kingdom</p>
+        </div>
+        <div class="contact-social" style="display: flex;flex-direction: column;">
+            <h5>Contact Us</h5>
+            <a href="tel:01614806204"><i class="fas fa-phone-alt"></i> +44 1614806204</a>
+            <a href="mailto:info@"><i class="fas fa-envelope-open-text"></i> info@g2brands.co.uk</a>
+            <div class="social-icons" style="display: flex;justify-content: space-between;">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <h5>Brands:</h5>
+            <ul>
+                <li><a href="entity.html">Entity</a></li>
+                <li><a href="prizm.html">Prizm</a></li>
+                <li><a href="audial.html">Audial</a></li>
+                <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                <li><a href="koti.html">Koti</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h5>Sitemap:</h5>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sourcing.html">Sourcing</a></li>
+                <li><a href="branding-design.html">Branding & Design</a></li>
+                <li><a href="quality-assurance.html">Quality Assurance</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

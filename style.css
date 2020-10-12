@@ -1434,6 +1434,87 @@ li>a:only-child:after {
   opacity: 0;
 }
 
+/* KOTI KOTI KOTI KOTI KOTI KOTI KOTI
+--------------------------------------------- */
+
+.koti-header {
+  width: 100%;
+  background: url(assets/koti-banner.jpg) no-repeat;
+  background-size: cover;
+  height: 45vw;
+}
+.koti-header .text {
+  width: 38%;
+  position: relative;
+  left: 48vw;
+  top: 6vw;
+  }
+.koti-header .text p {
+  font-size: 3vw;
+  text-align: center;
+  font-weight: 800;
+}
+
+
+/* =================================================== */
+
+.koti-security-panel {
+  width: 100%;
+  background: url(assets/koti-overlay.png) no-repeat;
+  background-size: auto 46%;
+  background-position: 4vw 29vw;
+  display: flex;
+  justify-content: space-evenly;
+  height: 45vw;
+}
+.koti-security-panel .blurb-box {
+  width: 40%;
+  position: relative;
+  left: 5vw;
+  top: 3vw;
+}
+.koti-security-panel .blurb-box h2 {
+  font-size: 3vw;
+  line-height: 1;
+}
+.koti-security-panel .blurb-box p {
+  font-size: 1.2vw;
+  line-height: 1.4;
+  margin: 2vw 0;
+}
+.koti-security-panel .blurb-box .icon-box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.koti-security-panel .blurb-box .icon-box .icon {
+  width: 20%;
+}
+.koti-security-panel .blurb-box .icon-box .icon img {
+  width: 60%;
+}
+.koti-security-panel .blurb-box .icon-box .icon h5 {
+  font-size: 1.2vw;
+  margin: 1vw 0 0.5vw 0;
+}
+.koti-security-panel .blurb-box .icon-box .icon p {
+  font-size: 1vw;
+  font-weight: 500;
+  margin: 0;
+}
+.koti-security-panel #koti-cf-image {
+  width: 55%;
+  display: block;
+  position: relative;
+  top: 2vw;
+  left: 3vw;
+}
+.koti-security-panel #koti-cf-image img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
 
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES
 --------------------------------------------- */
