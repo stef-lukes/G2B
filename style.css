@@ -1282,6 +1282,159 @@ li>a:only-child:after {
   opacity: 0;
 }
 
+
+/* B-AKTIV B-AKTIV B-AKTIV B-AKTIV B-AKTIV
+--------------------------------------------- */
+
+.b-aktiv-header {
+  width: 100%;
+  background: url(assets/b-aktiv-banner.jpg) no-repeat;
+  background-size: 131% auto;
+  background-position: 0vw 56%;
+  height: 45vw;
+}
+.b-aktiv-header .text {
+  width: 50%;
+  position: relative;
+  left: 5vw;
+  top: 4vw;
+}
+.b-aktiv-header .text p {
+  color: white;
+  font-size: 2vw;
+  width: 100%;
+  margin-top: 2vw;
+}
+
+/* =================================================== */
+
+.b-aktiv-cam-panel {
+  width: 100%;
+  background: url(assets/b-aktiv-overlay.png) no-repeat;
+  background-size: auto 13%;
+  background-position: right 2vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  height: 40vw;
+}
+.b-aktiv-cam-panel .blurb-box {
+  width: 40%;
+  position: relative;
+  right: 3vw;
+}
+.b-aktiv-cam-panel .blurb-box h2 {
+  font-size: 3.5vw;
+  line-height: 1;
+}
+.b-aktiv-cam-panel .blurb-box p {
+  font-size: 1.2vw;
+  line-height: 1.4;
+  margin: 2vw 0;
+}
+.b-aktiv-cam-panel .blurb-box .icon-box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.b-aktiv-cam-panel .blurb-box .icon-box .icon {
+  width: 20%;
+}
+.b-aktiv-cam-panel .blurb-box .icon-box .icon img {
+  width: 60%;
+}
+.b-aktiv-cam-panel .blurb-box .icon-box .icon h5 {
+  font-size: 1.2vw;
+  margin: 1vw 0 0.5vw 0;
+}
+.b-aktiv-cam-panel .blurb-box .icon-box .icon p {
+  font-size: 1vw;
+  font-weight: 500;
+  margin: 0;
+}
+.b-aktiv-cam-panel #cam-cf-image {
+  width: 45%;
+  display: block;
+  position: relative;
+  top: -2vw;
+  right: 4vw;
+}
+.b-aktiv-cam-panel #cam-cf-image img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+.b-aktiv-cam-panel #cam-cf-image img.top:hover {
+  opacity: 0;
+}
+
+
+
+/* =================================================== */
+
+.b-aktiv-watch-panel {
+  width: 100%;
+  background: url(assets/b-aktiv-overlay.png) no-repeat;
+  background-size: auto 12%;
+  background-position: left 3vw;
+  display: flex;
+  justify-content: space-evenly;
+  height: 45vw;
+}
+.b-aktiv-watch-panel .blurb-box {
+  width: 40%;
+  position: relative;
+  left: 5vw;
+  top: 3vw;
+}
+.b-aktiv-watch-panel .blurb-box h2 {
+  font-size: 3vw;
+  line-height: 1;
+}
+.b-aktiv-watch-panel .blurb-box p {
+  font-size: 1.2vw;
+  line-height: 1.4;
+  margin: 2vw 0;
+}
+.b-aktiv-watch-panel .blurb-box .icon-box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.b-aktiv-watch-panel .blurb-box .icon-box .icon {
+  width: 20%;
+}
+.b-aktiv-watch-panel .blurb-box .icon-box .icon img {
+  width: 60%;
+}
+.b-aktiv-watch-panel .blurb-box .icon-box .icon h5 {
+  font-size: 1.2vw;
+  margin: 1vw 0 0.5vw 0;
+}
+.b-aktiv-watch-panel .blurb-box .icon-box .icon p {
+  font-size: 1vw;
+  font-weight: 500;
+  margin: 0;
+}
+.b-aktiv-watch-panel #watch-cf-image {
+  width: 45%;
+  display: block;
+  position: relative;
+  top: -2vw;
+  left: 5vw;
+}
+.b-aktiv-watch-panel #watch-cf-image img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+.b-aktiv-watch-panel #watch-cf-image img.top:hover {
+  opacity: 0;
+}
+
+
 /* MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES
 --------------------------------------------- */
 @media all and (max-width : 1550px) {
