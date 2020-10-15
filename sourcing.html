@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>G2Brands | Home</title>
+
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 600 ||
+                document.documentElement.scrollTop > 600
+            ) {
+                document.getElementById("smallnavbar").style.visibility = "visible";
+                document.getElementById("smalllogo").style.visibility = "visible";
+                document.getElementById("smallnavbar").style.opacity = "1";
+                document.getElementById("smalllogo").style.opacity = "1";
+            } else {
+                document.getElementById("smallnavbar").style.visibility = "hidden";
+                document.getElementById("smalllogo").style.visibility = "hidden";
+                document.getElementById("smallnavbar").style.opacity = "0";
+                document.getElementById("smalllogo").style.opacity = "0";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar 
+------------------------------------------- -->
+
+
+    <nav>
+        <div id="logo"><img src="assets/g2b-logo-1.svg" alt=""></div>
+        <input type="checkbox" id="drop" />
+        <label for="drop" class="toggle-1" id='main-toggle'><span class="nav-icon"></span></label>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-1" class="toggle-2">Brands +</label>
+                <a href="#">Brands</a>
+                <input type="checkbox" id="drop-1">
+                <ul>
+                    <li><a href="entity.html">Entity</a></li>
+                    <li><a href="audial.html">Audial</a></li>
+                    <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                    <li><a href="prizm.html">Prizm</a></li>
+                    <li class="sub-koti"><a href="koti.html">Koti</a></li>
+                </ul>
+            </li>
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="branding-design.html">Branding & Design</a></li>
+            <li><a href="quality-assurance.html">Quality Assurance</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="smallnavbar" class="smallnavbar">
+        <div id="smalllogo" class="smalllogo"><img src="assets/g2b-logo-1-small-grey.svg" alt=""></div>
+        <label for="drop-2" class="toggle-3" id='main-toggle-small'><span class="nav-icon"></span></label>
+        <input type="checkbox" id="drop-2">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-3" class="toggle-4">Brands +</label>
+                <a href="#">Brands</a>
+                <input type="checkbox" id="drop-3">
+                <ul>
+                    <li><a href="entity.html">Entity</a></li>
+                    <li><a href="audial.html">Audial</a></li>
+                    <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                    <li><a href="prizm.html">Prizm</a></li>
+                    <li class="sub-koti"><a href="koti.html">Koti</a></li>
+                </ul>
+            </li>
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="branding-design.html">Branding & Design</a></li>
+            <li><a href="quality-assurance.html">Quality Assurance</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- SOURCING HEADER 
+------------------------------------------- -->
+
+    <div class="sourcing-header">
+        <div class="text">
+            <!-- <h1>Sourcing</h1> -->
+            <img src="assets/sourcing.png" alt="">
+            <p>Here at G2Brands we offer bespoke sourcing programmes for retailers and distributors inline with your
+                seasonal buying needs. With extensive worldwide contacts and a buying office in Hong Kong we're your Go
+                2 when sourcing new products</p>
+        </div>
+    </div>
+
+
+    <!-- SOURCING BOXES 
+------------------------------------------- -->
+
+
+    <div class="sourcing-panel">
+
+        <div class="text-box">
+            <div class="text">
+                <h3>Extensive worldwide supplier contacts</h3>
+                <p>Working with the best ethical and innovative suppliers, we have contacts throughout the world to
+                    enable
+                    us to bring the best products to market.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/supplier-contacts.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="sourcing-panel sourcing-panel-b">
+        <div class="text-box">
+            <div class="text">
+                <h3>Expertise in sourcing</h3>
+                <p>Our experienced Buying team are continually travelling to North America, Europe and Asia to the
+                    worlds
+                    biggest trade fairs to bring you the best new tech and innovation.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/trade-fairs.jpg"
+                alt="">
+        </div>
+    </div>
+    <div class="sourcing-panel">
+
+        <div class="text-box">
+            <div class="text">
+                <h3>Hong Kong Buying Office</h3>
+                <p>With our Hong Kong Buying and Merchandising office we have multi-lingual staff ensuring effective
+                    communication with our key partner suppliers</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/hong-kong-buying-office.jpg" alt="">
+        </div>
+    </div>
+    <div class="sourcing-panel sourcing-panel-b" id="bottom-panel">
+        <div class="text-box">
+            <div class="text">
+                <h3>Shipping and Importing</h3>
+                <p>Our Imports and Merchandising teams are on hand to ensure your goods are shipped on time, efficiently
+                    and safely from the supplier to your door.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/importing-expertise.jpg"
+                alt="">
+        </div>
+    </div>
+
+    <!-- Footer 
+------------------------------------------- -->
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="assets/g2b-logo-grey.svg" alt="">
+            <p>Giani UK Ltd, Central House, 2-4 Wellington Grove,
+                Stockport, Cheshire, SK2 6RH, United Kingdom</p>
+        </div>
+        <div class="contact-social" style="display: flex;flex-direction: column;">
+            <h5>Contact Us</h5>
+            <a href="tel:01614806204"><i class="fas fa-phone-alt"></i> +44 1614806204</a>
+            <a href="mailto:info@"><i class="fas fa-envelope-open-text"></i> info@g2brands.co.uk</a>
+            <div class="social-icons" style="display: flex;justify-content: space-between;">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <h5>Brands:</h5>
+            <ul>
+                <li><a href="entity.html">Entity</a></li>
+                <li><a href="prizm.html">Prizm</a></li>
+                <li><a href="audial.html">Audial</a></li>
+                <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                <li><a href="koti.html">Koti</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h5>Sitemap:</h5>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sourcing.html">Sourcing</a></li>
+                <li><a href="branding-design.html">Branding & Design</a></li>
+                <li><a href="quality-assurance.html">Quality Assurance</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
