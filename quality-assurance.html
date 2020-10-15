@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>G2Brands | Home</title>
+
+    <script>
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 600 ||
+                document.documentElement.scrollTop > 600
+            ) {
+                document.getElementById("smallnavbar").style.visibility = "visible";
+                document.getElementById("smalllogo").style.visibility = "visible";
+                document.getElementById("smallnavbar").style.opacity = "1";
+                document.getElementById("smalllogo").style.opacity = "1";
+            } else {
+                document.getElementById("smallnavbar").style.visibility = "hidden";
+                document.getElementById("smalllogo").style.visibility = "hidden";
+                document.getElementById("smallnavbar").style.opacity = "0";
+                document.getElementById("smalllogo").style.opacity = "0";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar 
+------------------------------------------- -->
+
+
+    <nav>
+        <div id="logo"><img src="assets/g2b-logo-1.svg" alt=""></div>
+        <input type="checkbox" id="drop" />
+        <label for="drop" class="toggle-1" id='main-toggle'><span class="nav-icon"></span></label>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-1" class="toggle-2">Brands +</label>
+                <a href="#">Brands</a>
+                <input type="checkbox" id="drop-1">
+                <ul>
+                    <li><a href="entity.html">Entity</a></li>
+                    <li><a href="audial.html">Audial</a></li>
+                    <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                    <li><a href="prizm.html">Prizm</a></li>
+                    <li class="sub-koti"><a href="koti.html">Koti</a></li>
+                </ul>
+            </li>
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="branding-design.html">Branding & Design</a></li>
+            <li><a href="quality-assurance.html">Quality Assurance</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <nav id="smallnavbar" class="smallnavbar">
+        <div id="smalllogo" class="smalllogo"><img src="assets/g2b-logo-1-small-grey.svg" alt=""></div>
+        <label for="drop-2" class="toggle-3" id='main-toggle-small'><span class="nav-icon"></span></label>
+        <input type="checkbox" id="drop-2">
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-3" class="toggle-4">Brands +</label>
+                <a href="#">Brands</a>
+                <input type="checkbox" id="drop-3">
+                <ul>
+                    <li><a href="entity.html">Entity</a></li>
+                    <li><a href="audial.html">Audial</a></li>
+                    <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                    <li><a href="prizm.html">Prizm</a></li>
+                    <li class="sub-koti"><a href="koti.html">Koti</a></li>
+                </ul>
+            </li>
+            <li><a href="sourcing.html">Sourcing</a></li>
+            <li><a href="branding-design.html">Branding & Design</a></li>
+            <li><a href="quality-assurance.html">Quality Assurance</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- QUALITY ASSURANCE HEADER 
+------------------------------------------- -->
+
+    <div class="qa-header">
+        <div class="text">
+            <h1>Quality Assurance</h1>
+            <!-- <img src="assets/sourcing.png" alt=""> -->
+            <p>At G2Brands our mission statement is to be the best in our field at supplying inspirational and
+                innovative products, which exceed consumer expectation.</p>
+        </div>
+    </div>
+
+
+    <!-- QUALITY ASSURANCE BOXES 
+------------------------------------------- -->
+
+
+    <div class="qa-panel">
+
+        <div class="text-box">
+            <div class="text">
+                <h3>Innovation</h3>
+                <p>Products are developed that exceed customer expectation and are innovative and market leading. This
+                    includes both product and packaging design.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/innovation.jpg" alt="">
+        </div>
+    </div>
+    <div class="qa-panel qa-panel-b">
+        <div class="text-box">
+            <div class="text">
+                <h3>Product Legislation (GPSR)</h3>
+                <p>All products launched meet UK product legislation (GPSR) and are independently tested by accredited
+                    test laboratories.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/legal.jpg" alt="">
+        </div>
+    </div>
+    <div class="qa-panel">
+
+        <div class="text-box">
+            <div class="text">
+                <h3>Diverse Product Range</h3>
+                <p>We aim to provide an exceptional and diverse product range covering Digital, Audio, SDA's, Garden
+                    Power, Gaming, Floorcare & Heating/Cooling. Expert product technical support provided.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/diverse-range.jpg" alt="">
+        </div>
+    </div>
+    <div class="qa-panel qa-panel-b">
+        <div class="text-box">
+            <div class="text">
+                <h3>Ethical Sourcing</h3>
+                <p>All factories are ethically sourced and must follow BSCI / Sedex guidelines and must meet our
+                    stringent requirements.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/ethically-sourced.jpg" alt="">
+        </div>
+    </div>
+    <div class="qa-panel">
+
+        <div class="text-box">
+            <div class="text">
+                <h3>Corporate Social Responsibility</h3>
+                <p>Social responsibility is a core value and is manifested at all levels of our infrastructure. This is
+                    something we demand of our suppliers as well.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/corporate-social-responsibility.jpg" alt="">
+        </div>
+    </div>
+    <div class="qa-panel qa-panel-b" id="bottom-panel">
+        <div class="text-box">
+            <div class="text">
+                <h3>Product Testing</h3>
+                <p>All of our products go through extensive development programmes with quality and safety paramount.
+                    Continual system/product reviews ensure we are supplying products that are first class and exceed
+                    customer expectations.</p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="assets/product-review.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Footer 
+------------------------------------------- -->
+
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="assets/g2b-logo-grey.svg" alt="">
+            <p>Giani UK Ltd, Central House, 2-4 Wellington Grove,
+                Stockport, Cheshire, SK2 6RH, United Kingdom</p>
+        </div>
+        <div class="contact-social" style="display: flex;flex-direction: column;">
+            <h5>Contact Us</h5>
+            <a href="tel:01614806204"><i class="fas fa-phone-alt"></i> +44 1614806204</a>
+            <a href="mailto:info@"><i class="fas fa-envelope-open-text"></i> info@g2brands.co.uk</a>
+            <div class="social-icons" style="display: flex;justify-content: space-between;">
+                <a href="#" class="fab fa-facebook"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <h5>Brands:</h5>
+            <ul>
+                <li><a href="entity.html">Entity</a></li>
+                <li><a href="prizm.html">Prizm</a></li>
+                <li><a href="audial.html">Audial</a></li>
+                <li><a href="b-aktiv.html">B-Aktiv</a></li>
+                <li><a href="koti.html">Koti</a></li>
+            </ul>
+        </div>
+        <div class="footer-nav">
+            <h5>Sitemap:</h5>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sourcing.html">Sourcing</a></li>
+                <li><a href="branding-design.html">Branding & Design</a></li>
+                <li><a href="quality-assurance.html">Quality Assurance</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
