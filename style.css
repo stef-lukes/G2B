@@ -494,20 +494,20 @@ li>a:only-child:after {
   background-size: contain, contain; */
   margin-bottom: -10vw;
 }
-.sourcing .sourcing-header {
+.sourcing .sourcing-homepage {
   display: flex;
   justify-content: space-between;
   align-content: center;
   width: 90%;
   margin: 0 auto -1vw auto;
 }
-.sourcing .sourcing-header .image {
+.sourcing .sourcing-homepage .image {
   width: 50%;
 }
-.sourcing .sourcing-header .text-n-button {
+.sourcing .sourcing-homepage .text-n-button {
   width: 45%;
 }
-.sourcing .sourcing-header .text-n-button h2 {
+.sourcing .sourcing-homepage .text-n-button h2 {
   font-size: 4.5vw;
   line-height: 1.2;
   margin-bottom: 2vw;
@@ -1883,7 +1883,7 @@ li>a:only-child:after {
     font-size: 1.4vw;
     text-align: justify;
   }
-  .sourcing .sourcing-header .text-n-button h2 {
+  .sourcing .sourcing-homepage .text-n-button h2 {
     line-height: 1.1;
     margin-bottom: 3vw;
   }
@@ -1918,7 +1918,7 @@ li>a:only-child:after {
     font-size: 1.8vw;
     text-align: justify;
   }
-  .sourcing .sourcing-header .text-n-button h2 {
+  .sourcing .sourcing-homepage .text-n-button h2 {
     line-height: 1.1;
     margin-bottom: 5vw;
   }
@@ -1933,10 +1933,10 @@ li>a:only-child:after {
   .sourcing {
     padding: 1vw 0 0 0;
   }
-  .sourcing .sourcing-header .image {
+  .sourcing .sourcing-homepage .image {
     width: 70%;
   }
-  .sourcing .sourcing-header .text-n-button {
+  .sourcing .sourcing-homepage .text-n-button {
     width: 85%;
     text-align: center;
     margin-bottom: 4vw;
