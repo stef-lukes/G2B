@@ -1523,10 +1523,36 @@ li>a:only-child:after {
 
 .sourcing-header {
   width: 100%;
-  background: url(assets/sourcing-banner-2.jpg) no-repeat;
+  background: url(assets/sourcing-banner.jpg) no-repeat;
   background-size: 100%;
-  background-position: bottom left;
+  background-position: center left;
   height: 45vw;
+  box-shadow: 0 2em 3em -1em rgba(15, 5, 68, 0.1);
+}
+
+.sourcing-header img {
+  width: 100%;
+  width: 65%;
+  border-right: 6px dotted white;
+  padding-right: 2vw;
+}
+.sourcing-header .text {
+  width: 44%;
+  position: relative;
+  top: 4vw;
+  left: 4vw;
+}
+.sourcing-header .text h1 {
+  color: white;
+  font-size: 8vw;
+  font-weight: 700;
+}
+.sourcing-header .text p {
+  font-size: 1.4vw;
+  line-height: 1.5;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 .qa-header {
   width: 100%;
@@ -1534,6 +1560,7 @@ li>a:only-child:after {
   background-size: 106%;
   background-position: center left;
   height: 45vw;
+  box-shadow: 0 2em 3em -1em rgba(15, 5, 68, 0.1);
 }
 .qa-header .text {
   width: 52%;
@@ -1550,93 +1577,95 @@ li>a:only-child:after {
   font-size: 1.6vw;
   line-height: 1.5;
 }
-.sourcing-header img {
+.branding-header {
   width: 100%;
-  width: 65%;
-  border-right: 6px dotted white;
-  padding-right: 2vw;
+  background: url(assets/packaging-banner.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center left;
+  height: 45vw;
+  box-shadow: 0 2em 3em -1em rgba(15, 5, 68, 0.1);
 }
-.sourcing-header .text {
-  color: white;
-  top: 6vw;
-  display: flex;
-  align-items: center;
-  width: 80%;
-  justify-content: space-evenly;
-  margin: auto;
+.branding-header .text {
+  width: 45%;
   position: relative;
+  top: 4vw;
+  left: 4vw;
 }
-.sourcing-header .text h1 {
-  color: white;
-  font-size: 9vw;
-  line-height: 1.;
-  font-weight: 700;
-  width: 50%;
-  margin: ;
-  border-right: solid white 4px;
+.branding-header .text h1 {
+  color: #3e3b38;
+  font-size: 5vw;
 }
-.sourcing-header .text p {
-  font-size: 1.2vw;
-  letter-spacing: 1px;
-  line-height: 1.4;
-  font-weight: 300;
-  width: 50%;
-  padding-left: 2vw;
+.branding-header .text p {
+  color: #222222;
+  font-size: 1.6vw;
+  line-height: 1.5;
 }
 
 /* =================================================== */
 
-.sourcing-panel, .qa-panel {
-  background: url(assets/g2b-overlay.png) no-repeat;
-  background-size: auto 35%;
-  background-position: 5vw 0vw;
-  margin: 10vw 3vw;
+.sourcing-panel, .qa-panel, .branding-panel {
   display: flex;
+  background: url(assets/g2b-overlay.png) no-repeat;
+  background-size: auto 27%;
+  background-position: 8vw 9vw;
+  padding: 10vw 3vw;
+  box-shadow: 0 2em 3em -1em rgba(15, 5, 68, 0.1);
   
 }
-.sourcing-panel-b, .qa-panel-b {
+.sourcing-panel-b, .qa-panel-b, .branding-panel-b {
  flex-direction: row-reverse;
- background-position: 51vw 1vw !important;
+ background-position: 55vw 10vw !important;
 }
 .sourcing-panel-b .image img {
 
 } 
 .sourcing-panel .image,
-.qa-panel .image {
+.qa-panel .image,
+.branding-panel .image {
   width: 50%;
 }
 .sourcing-panel .image img,
-.qa-panel .image img {
+.qa-panel .image img,
+.branding-panel .image img {
   width: 90%;
   margin: auto;
   display: block;
   box-shadow: 2em 2em rgba(0, 0, 0, 0.1);
 }
 .sourcing-panel .text-box,
-.qa-panel .text-box {
-  padding-top: 13%;
+.qa-panel .text-box,
+.branding-panel .text-box {
+  position: relative;
+  left: 2vw;
+  top: 15vw;
   width: 50%;
 }
 .sourcing-panel .text-box .text,
-.qa-panel .text-box .text {
+.qa-panel .text-box .text,
+.branding-panel .text-box .text {
   width: 80%;
   margin: auto;
 }
 .sourcing-panel .text-box .text h3,
-.qa-panel .text-box .text h3 {
+.qa-panel .text-box .text h3,
+.branding-panel .text-box .text h3 {
   font-size: 3.2vw;
   font-weight: 900;
   line-height: 1;
 }
 .sourcing-panel .text-box .text p,
-.qa-panel .text-box .text p {
+.qa-panel .text-box .text p,
+.branding-panel .text-box .text p {
   font-size: 1.3vw;
   line-height: 1.5;
   font-weight: 300;
   margin-top: 1vw;
+  padding-bottom: 2vw;
+  border-bottom: 10px dotted #b7b7b7;
 }
 #bottom-panel {
   margin-bottom: 10vw;
+  box-shadow: none;
 }
 
 
