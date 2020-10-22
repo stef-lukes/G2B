@@ -1322,8 +1322,9 @@ color: #7b7b7b;
   width: 100%;
   transition: opacity 0.3s ease-in-out;
 }
-.audial-anc-panel .images #anc-cf-image img.top:hover,
-.hoverontouch--aktiv .audial-anc-panel .images #anc-cf-image img.top {
+
+.hoverontouch--aktiv .audial-anc-panel .images #anc-cf-image img.top,
+.audial-anc-panel .images #anc-cf-image img.top:hover {
   opacity: 0;
 }
 
